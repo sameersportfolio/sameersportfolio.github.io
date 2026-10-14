@@ -453,7 +453,7 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
 
-/* FIX: Open a Gmail compose window when an email button is clicked. */
+/* FIX: Open a Gmail compose window when an email button is clicked. */ 
 document.querySelectorAll(".email-button").forEach(button => {
   button.addEventListener("click", function(event) {
     event.preventDefault();

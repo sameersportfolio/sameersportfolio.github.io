@@ -1,292 +1,96 @@
-
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sameer Hassan — Dental Payment Posting Specialist with 7 years of U.S. dental billing experience. Dentrix, EOB, ERA, insurance and patient payment posting support.">
+<meta name="description" content="Sameer Hassan — Dental Payment Posting Specialist with 4 years of U.S. dental billing experience: 3 years freelance supporting Little Rock Walk-In Clinic and 1 year at 10 Solutions. Dentrix, EOB, ERA, insurance and patient payment posting support.">
 <title>Sameer Hassan | Dental Payment Posting Specialist</title>
-
 <style>
-:root {
-  --bg:#060d1b;
-  --surface:#0b1930;
-  --surface2:#102641;
-  --text:#f2f8ff;
-  --muted:#a6bad3;
-  --accent:#4fffd2;
-  --accent2:#7b8cff;
-  --line:rgba(147,190,255,.17);
-  --shadow:0 24px 70px rgba(0,0,0,.34);
-}
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; scroll-padding-top:85px; }
-body {
-  margin:0;
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:
-    radial-gradient(ellipse at 12% 8%,rgba(43,108,255,.14),transparent 34%),
-    radial-gradient(ellipse at 90% 34%,rgba(42,255,211,.08),transparent 30%),
-    var(--bg);
-  background-attachment:fixed;
-  color:var(--text);
-  line-height:1.6;
-}
-body:before {
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:-1;
-  pointer-events:none;
-  background-image:
-    linear-gradient(rgba(123,140,255,.045) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(123,140,255,.045) 1px,transparent 1px);
-  background-size:42px 42px;
-  mask-image:linear-gradient(to bottom,black,transparent 88%);
-}
-a { color:inherit; text-decoration:none; }
-.wrap { width:min(1120px,92%); margin:auto; }
-.nav {
-  position:sticky;
-  top:0;
-  z-index:20;
-  background:rgba(6,13,27,.88);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--line);
-}
-.navin {
-  min-height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-.brand { font-weight:800; letter-spacing:-.02em; font-size:1.2rem; }
-.brand span { color:var(--accent); text-shadow:0 0 22px rgba(79,255,210,.55); }
-.links { display:flex; gap:24px; color:var(--muted); font-size:.93rem; }
-.links a:hover { color:var(--accent); }
-.btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  padding:13px 18px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  font-weight:700;
-  transition:.25s ease;
-  position:relative;
-  overflow:hidden;
-}
-.btn.primary {
-  background:linear-gradient(110deg,#4fffd2,#8cf7ec);
-  color:#05221e;
-  border-color:transparent;
-  box-shadow:0 0 28px rgba(79,255,210,.16);
-}
-.btn:hover { transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.2); }
-.btn.primary:hover { box-shadow:0 0 34px rgba(79,255,210,.28); }
-.hero { position:relative; overflow:hidden; isolation:isolate; padding:110px 0 85px; }
-.orb {
-  position:absolute;
-  width:520px;
-  height:520px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(79,255,210,.23),rgba(123,140,255,.1) 38%,transparent 70%);
-  filter:blur(4px);
-  right:-180px;
-  top:-170px;
-  animation:float 7s ease-in-out infinite;
-  z-index:-1;
-}
-.orb2 {
-  position:absolute;
-  width:420px;
-  height:420px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(123,140,255,.19),rgba(79,255,210,.06) 40%,transparent 70%);
-  left:-230px;
-  bottom:-220px;
-  animation:float 9s ease-in-out infinite;
-  z-index:-1;
-}
-.eyebrow {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:7px 11px;
-  border:1px solid rgba(79,255,210,.3);
-  border-radius:999px;
-  color:#bafff0;
-  background:rgba(79,255,210,.08);
-  font-size:.83rem;
-  font-weight:700;
-  animation:rise .7s ease both;
-}
-.dot {
-  width:7px;
-  height:7px;
-  background:var(--accent);
-  border-radius:50%;
-  box-shadow:0 0 0 6px rgba(79,255,210,.1);
-  animation:pulseDot 2s ease-in-out infinite;
-}
-h1 {
-  font-size:clamp(3rem,7vw,6.4rem);
-  line-height:.98;
-  letter-spacing:-.065em;
-  max-width:900px;
-  margin:22px 0;
-}
-.gradient {
-  background:linear-gradient(100deg,#fff 5%,#4fffd2 43%,#9aa7ff 72%,#83dfff);
-  background-size:220% auto;
-  animation:gradientFlow 8s ease-in-out infinite;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-}
-.lead { max-width:720px; color:var(--muted); font-size:1.18rem; }
-.actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
-.trust { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:58px; }
-.stat {
-  padding:18px;
-  border:1px solid var(--line);
-  border-radius:16px;
-  background:rgba(255,255,255,.025);
-  transition:.3s ease;
-}
-.stat:hover { transform:translateY(-5px); border-color:rgba(79,255,210,.45); }
-.stat b { display:block; font-size:1.45rem; }
-.stat span { color:var(--muted); font-size:.88rem; }
-.section { padding:92px 0; }
-.section-head { max-width:700px; margin-bottom:34px; }
-.kicker { color:var(--accent); font-size:.82rem; text-transform:uppercase; letter-spacing:.16em; font-weight:800; }
-.section h2 { font-size:clamp(2rem,4vw,3.3rem); line-height:1.05; letter-spacing:-.04em; margin:10px 0 12px; }
-.section p { color:var(--muted); }
-.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-.card {
-  background:linear-gradient(145deg,rgba(15,34,61,.92),rgba(8,22,42,.94));
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:25px;
-  box-shadow:var(--shadow);
-  transition:.3s ease;
-  position:relative;
-  overflow:hidden;
-}
-.card:hover { transform:translateY(-6px); border-color:rgba(79,255,210,.45); box-shadow:0 24px 55px rgba(0,0,0,.3); }
-.icon {
-  width:44px;
-  height:44px;
-  border-radius:13px;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,rgba(79,255,210,.15),rgba(123,140,255,.17));
-  color:var(--accent);
-  font-weight:900;
-  margin-bottom:20px;
-  border:1px solid rgba(79,255,210,.14);
-}
-.card h3 { margin:0 0 8px; font-size:1.15rem; }
-.card p { margin:0; font-size:.95rem; }
-.experience { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:stretch; }
-.panel {
-  padding:30px;
-  border:1px solid var(--line);
-  border-radius:22px;
-  background:linear-gradient(145deg,rgba(15,34,61,.92),rgba(8,22,42,.94));
-  box-shadow:var(--shadow);
-}
-.timeline { border-left:1px solid rgba(79,255,210,.42); padding-left:22px; }
-.timeline-item { position:relative; margin-bottom:25px; }
-.timeline-item:before {
-  content:"";
-  position:absolute;
-  left:-28px;
-  top:8px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:var(--accent);
-  box-shadow:0 0 0 5px rgba(79,255,210,.09);
-}
-.timeline-item h3 { margin:0; }
-.timeline-item small { color:var(--accent); font-weight:800; }
-.timeline-item p,.timeline-item li { color:var(--muted); }
-.timeline-item ul { padding-left:20px; }
-.checklist { display:grid; gap:12px; margin:20px 0 0; padding:0; list-style:none; }
-.checklist li { display:flex; gap:10px; color:var(--muted); }
-.check { color:var(--accent); font-weight:900; }
-.cta {
-  padding:58px;
-  border-radius:28px;
-  background:radial-gradient(ellipse at 100% 0,rgba(123,140,255,.2),transparent 48%),linear-gradient(120deg,#0d3142,#111e3e 75%);
-  border:1px solid rgba(79,255,210,.28);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:30px;
-  box-shadow:var(--shadow);
-}
-.cta h2 { margin:0; font-size:clamp(2rem,4vw,3.2rem); }
-.cta p { max-width:620px; }
-.contact { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-.contactbox {
-  display:block;
-  width:100%;
-  min-width:0;
-  padding:25px;
-  border:1px solid var(--line);
-  border-radius:18px;
-  background:linear-gradient(145deg,rgba(15,34,61,.92),rgba(8,22,42,.94));
-  overflow:hidden;
-  margin:0 0 14px;
-  transition:.3s ease;
-}
-.contactbox:hover { transform:translateY(-4px); border-color:rgba(79,255,210,.48); }
-.contactbox strong { display:block; margin-bottom:5px; }
-.contactbox span { display:block; color:var(--muted); overflow-wrap:anywhere; word-break:break-word; }
-.footer { padding:35px 0 45px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
-.reveal { opacity:0; transform:translateY(22px); filter:blur(3px); transition:opacity .7s ease,transform .7s ease,filter .7s ease; }
-.reveal.show { opacity:1; transform:none; filter:blur(0); }
-
-@keyframes rise { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:none; } }
-@keyframes float { 50% { transform:translateY(18px) translateX(-10px); } }
-@keyframes pulseDot {
-  0%,100% { box-shadow:0 0 0 5px rgba(79,255,210,.09); }
-  50% { box-shadow:0 0 0 8px rgba(79,255,210,.035),0 0 18px rgba(79,255,210,.5); }
-}
-@keyframes gradientFlow { 0%,100% { background-position:0% 50%; } 50% { background-position:100% 50%; } }
-
-@media(max-width:800px) {
-  .links { display:none; }
-  .hero { padding-top:75px; }
-  .trust,.grid,.experience,.contact { grid-template-columns:1fr 1fr; }
-  .cta { display:block; }
-  .cta .btn { margin-top:18px; }
-}
-@media(max-width:560px) {
-  .trust,.grid,.experience,.contact { grid-template-columns:1fr; }
-  .hero { padding-bottom:65px; }
-  .section { padding:70px 0; }
-  .cta { padding:32px; }
-  .actions .btn { width:100%; }
-  h1 { font-size:3.25rem; }
-  .navin>.btn { padding:10px 12px; font-size:.85rem; }
-}
-@media(prefers-reduced-motion:reduce) {
-  *,*:before,*:after {
-    animation-duration:.01ms!important;
-    animation-iteration-count:1!important;
-    scroll-behavior:auto!important;
-    transition-duration:.01ms!important;
-  }
-  .reveal { opacity:1; transform:none; filter:none; }
-}
+:root{--bg:#060d1b;--surface:#0b1930;--surface2:#102641;--text:#f2f8ff;--muted:#a6bad3;--accent:#4fffd2;--accent2:#7b8cff;--line:rgba(147,190,255,.17);--shadow:0 24px 70px rgba(0,0,0,.34)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 12% 8%,rgba(43,108,255,.14),transparent 34%),radial-gradient(ellipse at 90% 34%,rgba(42,255,211,.08),transparent 30%),var(--bg);background-attachment:fixed;color:var(--text);line-height:1.6}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(123,140,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(123,140,255,.045) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(6,13,27,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(79,255,210,.16)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:-.02em}
+.brand span{color:var(--accent);text-shadow:0 0 22px rgba(79,255,210,.55)}
+.links{display:flex;gap:24px;color:var(--muted);font-size:.93rem}
+.links a{transition:color .2s ease,text-shadow .2s ease}
+.links a:hover{color:var(--accent);text-shadow:0 0 18px rgba(79,255,210,.45)}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;transition:.25s ease;overflow:hidden;isolation:isolate}
+.btn:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.3),transparent 75%);transform:translateX(-130%);transition:transform .6s ease}
+.btn:hover:before{transform:translateX(130%)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.btn.primary{background:linear-gradient(110deg,#4fffd2,#8cf7ec);box-shadow:0 0 28px rgba(79,255,210,.16);color:#05221e;border-color:transparent}
+.btn.primary:hover{box-shadow:0 0 34px rgba(79,255,210,.28),0 12px 30px rgba(0,0,0,.22)}
+.hero{position:relative;isolation:isolate;overflow:hidden;padding:110px 0 85px}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(115deg,transparent 20%,rgba(123,140,255,.035) 50%,transparent 80%);background-size:200% 100%;animation:ambientSweep 12s linear infinite}
+.orb{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(79,255,210,.23),rgba(123,140,255,.1) 38%,transparent 70%);filter:blur(4px);right:-180px;top:-170px;animation:float 7s ease-in-out infinite}
+.orb2{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(123,140,255,.19),rgba(79,255,210,.06) 40%,transparent 70%);left:-230px;bottom:-220px;animation:float 9s ease-in-out infinite}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid rgba(79,255,210,.3);border-radius:999px;color:#bafff0;background:rgba(79,255,210,.08);box-shadow:inset 0 0 22px rgba(79,255,210,.035);font-size:.83rem;font-weight:700;animation:rise .7s ease both}
+.dot{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulseDot 2s ease-in-out infinite}
+h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.98;letter-spacing:-.065em;max-width:900px;margin:22px 0}
+.gradient{background:linear-gradient(100deg,#fff 5%,#4fffd2 43%,#9aa7ff 72%,#83dfff);background-size:220% auto;animation:gradientFlow 8s ease-in-out infinite;-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:720px;color:var(--muted);font-size:1.18rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:58px}
+.stat{position:relative;overflow:hidden;padding:18px;border:1px solid rgba(147,190,255,.16);border-radius:16px;background:linear-gradient(145deg,rgba(16,38,65,.66),rgba(9,24,44,.6));transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.stat:after{content:"";position:absolute;top:0;left:-100%;width:70%;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);animation:statShimmer 6s ease-in-out infinite}
+.stat:hover{transform:translateY(-5px);border-color:rgba(79,255,210,.45);box-shadow:0 12px 35px rgba(0,0,0,.2),0 0 22px rgba(79,255,210,.06)}
+.stat b{display:block;font-size:1.45rem;color:#f3fffd;text-shadow:0 0 24px rgba(79,255,210,.13)}
+.stat span{color:var(--muted);font-size:.88rem}
+.section{padding:92px 0}
+.section-head{max-width:700px;margin-bottom:34px}
+.kicker{color:var(--accent);font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800}
+.section h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;letter-spacing:-.04em;margin:10px 0 12px}
+.section p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card,.panel,.contactbox{background:linear-gradient(145deg,rgba(15,34,61,.92),rgba(8,22,42,.94));border:1px solid rgba(147,190,255,.16);backdrop-filter:blur(10px)}
+.card{position:relative;overflow:hidden;border-radius:20px;padding:25px;box-shadow:var(--shadow);transition:.3s ease}
+.card:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(circle at 0 0,rgba(79,255,210,.12),transparent 62%);transition:opacity .35s ease}
+.card:hover:before{opacity:1}
+.card:hover{transform:translateY(-6px);border-color:rgba(79,255,210,.45);box-shadow:0 24px 55px rgba(0,0,0,.3),0 0 24px rgba(79,255,210,.055)}
+.icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(79,255,210,.15),rgba(123,140,255,.17));color:var(--accent);border:1px solid rgba(79,255,210,.14);box-shadow:inset 0 0 18px rgba(79,255,210,.04);font-weight:900;margin-bottom:20px}
+.card h3{margin:0 0 8px;font-size:1.15rem}
+.card p{margin:0;font-size:.95rem}
+.experience{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.panel{padding:30px;border-radius:22px;box-shadow:var(--shadow)}
+.timeline{border-left:1px solid rgba(79,255,210,.42);padding-left:22px}
+.timeline-item{position:relative;margin-bottom:25px}
+.timeline-item:before{content:"";position:absolute;left:-28px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(79,255,210,.09),0 0 18px rgba(79,255,210,.45)}
+.timeline-item h3{margin:0}
+.timeline-item small{color:var(--accent)}
+.checklist{display:grid;gap:12px;margin:20px 0 0;padding:0;list-style:none}
+.checklist li{display:flex;gap:10px;color:var(--muted)}
+.check{color:var(--accent);font-weight:900}
+.cta{position:relative;overflow:hidden;padding:58px;border-radius:28px;background:radial-gradient(ellipse at 100% 0,rgba(123,140,255,.2),transparent 48%),linear-gradient(120deg,#0d3142,#111e3e 75%);border:1px solid rgba(79,255,210,.28);display:flex;align-items:center;justify-content:space-between;gap:30px;box-shadow:var(--shadow)}
+.cta:after{content:"";position:absolute;width:220px;height:220px;right:-75px;bottom:-120px;border:1px solid rgba(79,255,210,.18);border-radius:50%;box-shadow:0 0 0 22px rgba(79,255,210,.025),0 0 0 44px rgba(123,140,255,.025);pointer-events:none}
+.cta h2{margin:0;font-size:clamp(2rem,4vw,3.2rem)}
+.cta p{max-width:620px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contactbox{display:block;width:100%;min-width:0;overflow:hidden;margin:0 0 14px;padding:25px;border-radius:18px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.contactbox strong{display:block;margin-bottom:5px}
+.contactbox span{display:block;color:var(--muted);max-width:100%;overflow-wrap:anywhere;word-break:break-word}
+.contactbox:hover{transform:translateY(-4px);border-color:rgba(79,255,210,.48);box-shadow:0 14px 34px rgba(0,0,0,.24)}
+.contact>div{min-width:0}
+.contact>div>.contactbox:last-child{margin-bottom:0}
+.footer{padding:35px 0 45px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+.reveal{opacity:0;transform:translateY(22px);filter:blur(3px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+.reveal.show{opacity:1;transform:none;filter:blur(0)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(18px) translateX(-10px)}}
+@keyframes ambientSweep{0%{background-position:100% 0}100%{background-position:-100% 0}}
+@keyframes pulseDot{0%,100%{box-shadow:0 0 0 5px rgba(79,255,210,.09),0 0 0 rgba(79,255,210,0)}50%{box-shadow:0 0 0 8px rgba(79,255,210,.035),0 0 18px rgba(79,255,210,.5)}}
+@keyframes gradientFlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes statShimmer{0%,20%{left:-100%}55%,100%{left:140%}}
+@media(max-width:800px){.links{display:none}.hero{padding-top:75px}.trust,.grid,.experience,.contact{grid-template-columns:1fr 1fr}.cta{display:block}.cta .btn{margin-top:18px}}
+@media(max-width:560px){.trust,.grid,.experience,.contact{grid-template-columns:1fr}.hero{padding-bottom:65px}.section{padding:70px 0}.cta{padding:32px}.actions .btn{width:100%}h1{font-size:3.25rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none;filter:none}}
 </style>
 </head>
-
 <body>
 <nav class="nav">
   <div class="wrap navin">
@@ -308,16 +112,14 @@ h1 {
   <div class="wrap">
     <div class="eyebrow"><span class="dot"></span> Available for remote U.S. dental practice support</div>
     <h1>Accurate payment posting.<br><span class="gradient">Less billing workload.</span></h1>
-    <p class="lead">
-      I’m Sameer Hassan, a Dental Payment Posting Specialist with 7 years of hands-on U.S. dental billing experience. For the past 4 years, I’ve provided freelance payment-posting support for Little Rock Walk-In Clinic. I help dental practices keep insurance and patient payments organized, accurate, and up to date.
-    </p>
+    <p class="lead">I’m Sameer Hassan, a Dental Payment Posting Specialist with 4 years of hands-on U.S. dental billing experience: 3 years providing freelance payment-posting support for Little Rock Walk-In Clinic and 1 year at 10 Solutions. I help dental practices keep insurance and patient payments organized, accurate, and up to date.</p>
     <div class="actions">
-      <a class="btn primary email-button" href="mailto:sameerahad707@gmail.com?subject=Dental%20Payment%20Posting%20Support">Discuss your needs →</a>
+      <a class="btn primary" href="mailto:sameerahad707@gmail.com?subject=Dental%20Payment%20Posting%20Support">Discuss your needs →</a>
       <a class="btn" href="https://www.linkedin.com/in/sameer-hassan-billing" target="_blank" rel="noopener">View LinkedIn</a>
     </div>
     <div class="trust">
-      <div class="stat"><b>7</b><span>Years of experience</span></div>
-      <div class="stat"><b>4 years</b><span>Freelance support</span></div>
+      <div class="stat"><b>4</b><span>Years of experience</span></div>
+      <div class="stat"><b>3 years</b><span>Freelance support</span></div>
       <div class="stat"><b>Dentrix</b><span>Hands-on experience</span></div>
       <div class="stat"><b>EOB + ERA</b><span>Payment processing</span></div>
     </div>
@@ -334,7 +136,7 @@ h1 {
     <div class="grid">
       <article class="card reveal"><div class="icon">01</div><h3>Insurance Payment Posting</h3><p>Post insurance payments and remittance information accurately to patient accounts based on EOB and ERA details.</p></article>
       <article class="card reveal"><div class="icon">02</div><h3>Patient Payment Posting</h3><p>Handle patient payments and account updates with careful attention to accuracy and account history.</p></article>
-      <article class="card reveal"><div class="icon">03</div><h3>EOB & ERA Processing</h3><p>Process electronic and paper remittance information as part of the dental payment-posting workflow.</p></article>
+      <article class="card reveal"><div class="icon">03</div><h3>EOB &amp; ERA Processing</h3><p>Process electronic and paper remittance information as part of the dental payment-posting workflow.</p></article>
       <article class="card reveal"><div class="icon">04</div><h3>Payment Adjustments</h3><p>Apply payment-related adjustments and maintain clean, understandable account records.</p></article>
       <article class="card reveal"><div class="icon">05</div><h3>Payment Reconciliation</h3><p>Support reconciliation of posted payments so practice records stay organized and consistent.</p></article>
       <article class="card reveal"><div class="icon">06</div><h3>Billing Back-Office Support</h3><p>Provide dependable remote support for dental billing teams that need experienced payment-posting capacity.</p></article>
@@ -349,13 +151,13 @@ h1 {
     <div class="experience">
       <div class="panel reveal">
         <div class="kicker">Experience</div>
-        <h2>7 years in U.S. dental billing.</h2>
+        <h2>4 years in U.S. dental billing.</h2>
         <p>My experience is built around hands-on payment posting, accurate account updates, and organized remittance workflows.</p>
         <div class="timeline">
           <div class="timeline-item">
-            <small>4 YEARS</small>
+            <small>3 YEARS</small>
             <h3>Freelance — Little Rock Walk-In Clinic</h3>
-            <p>Provided freelance payment-posting support for U.S. dental billing operations, helping maintain accurate patient accounts and organized payment records.</p>
+            <p>Currently providing freelance payment-posting support, helping maintain accurate patient accounts and organized payment records.</p>
             <ul>
               <li>Posted insurance and patient payments to the appropriate accounts using available payment details.</li>
               <li>Reviewed EOBs and ERAs to identify payment amounts, adjustments, and patient responsibility where indicated.</li>
@@ -365,7 +167,7 @@ h1 {
             </ul>
           </div>
           <div class="timeline-item">
-            <small>3 YEARS</small>
+            <small>1 YEAR</small>
             <h3>10 Solutions</h3>
             <p>Worked as a Dental Payment Posting Specialist supporting U.S. dental billing operations and payment-related workflows.</p>
             <ul>
@@ -389,9 +191,9 @@ h1 {
         <h2>Experienced, focused, and remote.</h2>
         <p>I’m building an independent service for U.S. dental practices that need reliable payment-posting support without adding another full-time in-office role.</p>
         <ul class="checklist">
-          <li><span class="check">✓</span> 7 years of relevant U.S. dental billing experience</li>
-          <li><span class="check">✓</span> 4 years freelance support for Little Rock Walk-In Clinic</li>
-          <li><span class="check">✓</span> 3 years at 10 Solutions</li>
+          <li><span class="check">✓</span> 4 years of relevant U.S. dental billing experience</li>
+          <li><span class="check">✓</span> 3 years freelance support for Little Rock Walk-In Clinic</li>
+          <li><span class="check">✓</span> 1 year at 10 Solutions</li>
           <li><span class="check">✓</span> Specialized focus on payment posting</li>
           <li><span class="check">✓</span> Dentrix experience</li>
           <li><span class="check">✓</span> Insurance and patient payment experience</li>
@@ -411,7 +213,7 @@ h1 {
         <h2>Have a payment-posting backlog?</h2>
         <p>Tell me what your practice needs and we can discuss a simple remote support arrangement.</p>
       </div>
-      <a class="btn primary email-button" href="mailto:sameerahad707@gmail.com?subject=Dental%20Payment%20Posting%20Inquiry">Email Sameer →</a>
+      <a class="btn primary" href="mailto:sameerahad707@gmail.com?subject=Dental%20Payment%20Posting%20Inquiry">Email Sameer →</a>
     </div>
   </div>
 </section>
@@ -424,15 +226,9 @@ h1 {
       <p>Choose the contact method that works best for you.</p>
     </div>
     <div class="contact">
-      <a class="contactbox reveal email-button" href="mailto:sameerahad707@gmail.com?subject=Dental%20Payment%20Posting%20Inquiry">
-        <strong>✉ Business Email</strong><span>sameerahad707@gmail.com</span>
-      </a>
-      <a class="contactbox reveal" href="https://www.linkedin.com/in/sameer-hassan-billing" target="_blank" rel="noopener">
-        <strong>in LinkedIn</strong><span>linkedin.com/in/sameer-hassan-billing</span>
-      </a>
-      <a class="contactbox reveal" href="https://sameersportfolio.github.io" target="_blank" rel="noopener">
-        <strong>⌂ Portfolio Website</strong><span>sameersportfolio.github.io</span>
-      </a>
+      <a class="contactbox reveal" href="mailto:sameerahad707@gmail.com?subject=Dental%20Payment%20Posting%20Inquiry"><strong>✉ Business Email</strong><span>sameerahad707@gmail.com</span></a>
+      <a class="contactbox reveal" href="https://www.linkedin.com/in/sameer-hassan-billing" target="_blank" rel="noopener"><strong>in LinkedIn</strong><span>linkedin.com/in/sameer-hassan-billing</span></a>
+      <a class="contactbox reveal" href="https://sameersportfolio.github.io" target="_blank" rel="noopener"><strong>⌂ Portfolio Website</strong><span>sameersportfolio.github.io</span></a>
     </div>
   </div>
 </section>
@@ -443,31 +239,27 @@ h1 {
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver(entries => {
+const obs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add("show");
+    if (entry.isIntersecting) entry.target.classList.add('show');
   });
-}, { threshold: 0.12 });
+}, {threshold: 0.12});
 
-document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+document.querySelectorAll('.reveal').forEach(element => obs.observe(element));
 
-/* FIX: Open a Gmail compose window when an email button is clicked. */ 
-document.querySelectorAll(".email-button").forEach(button => {
-  button.addEventListener("click", function(event) {
+// Open email links in Gmail browser compose.
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+  link.addEventListener('click', function(event) {
     event.preventDefault();
-
-    const email = "sameerahad707@gmail.com";
-    const subject = new URL(button.href).searchParams.get("subject")
-      || "Dental Payment Posting Inquiry";
-
-    const gmailUrl =
-      "https://mail.google.com/mail/?view=cm&fs=1" +
-      "&to=" + encodeURIComponent(email) +
-      "&su=" + encodeURIComponent(subject);
-
-    window.open(gmailUrl, "_blank");
+    const address = link.href.match(/^mailto:([^?]+)/i);
+    const subject = new URL(link.href).searchParams.get('subject') || 'Dental Payment Posting Inquiry';
+    if (!address) return;
+    const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' +
+      encodeURIComponent(decodeURIComponent(address[1])) +
+      '&su=' + encodeURIComponent(subject);
+    window.open(gmailUrl, '_blank', 'noopener,noreferrer');
   });
 });
 </script>
